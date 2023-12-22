@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Jogo da Bugalha - Larissa Fazza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <button id="novoJogoBtn" type="button">Novo Jogo</button>
+      <h1>ESBUGALHADO</h1>
+        <div class="container">
+          <div class="area player-area">
+              <div class="player-content">
+                <img src="lamb.png" alt="Desenho do Carneiro (Player 1)">
+                <div class="subarea dice-box">
+                  <div id="player1box" class="box"></div>
+                </div>
+                <button id="sorteio-1-btn" class="sorteio-btn" hidden>Sortear dado</button>
+              </div>
+            </div>
+            <div class="area">
+                <div id="col-buttons" hidden>
+                  <button type="button" id="button-left"><=</button>
+                  <button type="button" id="button-right">=></button>
+                  <button type="button" id="button-select">Selecionar</button>
+                </div>
+                <div class="somas row">
+                  <div id="soma01"></div>
+                  <div id="soma11"></div>
+                  <div id="soma21"></div>
+              </div>
+                <div class="subarea">
+                    <div class="row">
+                      <div class="box coluna01" id="box001"></div>
+                      <div class="box coluna11" id="box011"></div>
+                      <div class="box coluna21" id="box021"></div>
+                    </div>
+                    <div class="row">
+                      <div class="box coluna01" id="box101"></div>
+                      <div class="box coluna11" id="box111"></div>
+                      <div class="box coluna21" id="box121"></div>
+                    </div>
+                    <div class="row">
+                      <div class="box coluna01" id="box201"></div>
+                      <div class="box coluna11" id="box211"></div>
+                      <div class="box coluna21" id="box221"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="somas row">
+                    <div id="soma00"></div>
+                    <div id="soma10"></div>
+                    <div id="soma20"></div>
+                </div>
+                  <div class="subarea">
+                    <div class="row">
+                      <div class="box coluna00" id="box000"></div>
+                      <div class="box coluna10" id="box010"></div>
+                      <div class="box coluna20" id="box020"></div>
+                    </div>
+                    <div class="row">
+                      <div class="box coluna00" id="box100"></div>
+                      <div class="box coluna10" id="box110"></div>
+                      <div class="box coluna20" id="box120"></div>
+                    </div>
+                    <div class="row">
+                      <div class="box coluna00" id="box200"></div>
+                      <div class="box coluna10" id="box210"></div>
+                      <div class="box coluna20" id="box220"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="area player-area">
+              <div class="player-content">
+                <img src="mouse.png" alt="Desenho do Rato (Player 2 -BOT)">
+                <div class="subarea dice-box" style="margin-top: 40px;">
+                  <div id="player0box"class="box"></div>
+                </div>
+                <button id="sorteio-0-btn" class="sorteio-btn" hidden>Sortear dado</button>
+              </div>
+            </div>
+          </div>
+
+    </main>
+    <script src="Jogo.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
