@@ -1,0 +1,136 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+
+  h1{
+    color: rgb(110, 4, 4);
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .area {
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .player-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .subarea {
+    flex: 1;
+    border: 3px solid rgb(110, 4, 4);
+    background-color: rgb(29, 26, 26);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #140f0f; 
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .dice-box{
+    margin-top: 60px;
+  }
+
+  .sorted-number{
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    margin:0px;
+    margin-top: 7px;
+    width: 50px;
+    font-size: 30px;
+  }
+
+  #novoJogoBtn{
+    float:right;
+    line-height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 100px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    background-color: rgb(110, 4, 4);
+    color:white;
+    border:none;
+    border-radius: 8px;
+  }
+
+  #novoJogoBtn:hover{
+    background-color: rgb(131, 37, 37);
+    cursor: pointer;
+  }
+
+  .sorteio-btn{
+    margin-left: 14px;
+    padding: 8px;
+    color:black;
+    background-color: lightgrey;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .sorteio-btn:hover{
+    background-color: rgb(88, 83, 83);
+  }
+
+  .addBordaColuna{
+    background-color: white;
+  }
+
+  #col-buttons{
+    margin-bottom: 16px;
+    margin-left: 8px;
+  }
+
+  .button-left{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .button-right{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 36px;
+  }
+
+  .button-select{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .somas{
+    color:white;
+    font-size: 20;
+  }
